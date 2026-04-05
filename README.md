@@ -8,14 +8,19 @@ As we all grew up around an environment with a high exposure to second hand smok
 
 We merged Melissa Zip-Code dataset for demographics and Health related dataset PLACES from the CDC by zip-codes in LA/OC county as our main data frame. Using XGBoost, we computed the top 5 most important features for our predictive model for asthma rate, with the top three being:
 
-Percentage of Population who are Asian (negative)
-Percentage of Adults experiencing Frequent Mental Distress
-Percentage of Population who are African American (Test R^2 = 0.6914)
+1. Percentage of Population who are Asian (negative)
+2. Percentage of Adults experiencing Frequent Mental Distress
+3. Percentage of Population who are African American
+   
+(Test R^2 = 0.6914)
+
 These findings contradicted our original hypothesis that being Asian would correlate to asthma rates in a positive matter (due to our own experiences being surrounded by smoking Asian American adults). Out of curiosity, we trained another model to predict cigarette smoking prevalence, to see if Asian Americans smoke more but are simply less prone to asthma (as has been found in research studies). We did not, however, find Asian population percentage as a top 5. The top three where:
 
-Percentage of population without a high school diploma
-Median Household Income (negative)
-Percentage of Adults experiencing Frequent Mental Distress (Test R^2 = 0.6594)
+1. Percentage of population without a high school diploma
+2. Median Household Income (negative)
+3. Percentage of Adults experiencing Frequent Mental Distress
+   
+(Test R^2 = 0.6594)
 
 ## Challenges we ran into
 
